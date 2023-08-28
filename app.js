@@ -1,3 +1,10 @@
+// At the top of your code
+const config = require('./config');
+
+// Then use it like this
+const apiKey = config.apiKey;
+
+
 let selectedTimezone1;
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -211,8 +218,6 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
             
         }
-
-        const apiKey = 'NjAyMDIyOmRkZDUxYWYyZTE4YmUzNWM3M2MxYTZkMGVhNzczNjRk';
 
         const myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
